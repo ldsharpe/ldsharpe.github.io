@@ -1,0 +1,74 @@
+/* 
+Color Palette: #77878B slate grey, #305252 dark slate grey, 
+                #373E40 onyx, #488286 teal, #B7D5D4 light blue
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: #B7D5D4;
+    height: 1000px;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 90%;
+    background-color: #305252;
+    left: 50%;
+    transform: translateX(-50.006%);
+    min-height: 50px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 15px;
+
+    transition: width 0.4s ease, margin 0.4s ease, border-radius 0.4s ease, height 0.3s ease;
+}
+
+.menu {
+    max-width: fit-content;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    color: white;
+    margin: 10px 20px;
+    transition: transform 0.4s ease;
+}
+
+.page-wrapper {
+    display: flex;
+    align-self: center;
+    transform: translateY(-100%); 
+    transition: transform 0.8s ease; 
+    width: 100%;
+}
+
+.pages {
+    display: none;
+    list-style-type: none;
+}
+
+.pages.active{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+    gap: 0.5rem;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: white;
+}
