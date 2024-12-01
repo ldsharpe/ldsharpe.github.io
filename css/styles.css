@@ -1,6 +1,6 @@
 /* 
-Color Palette: #77878B slate grey, #305252 dark slate grey, 
-                #373E40 onyx, #488286 teal, #B7D5D4 light blue
+Color Palette: #77878B slate_grey, #305252 dark slate_grey, 
+                #373E40 onyx, #488286 _teal, #B7D5D4 light_blue
 
 */
 
@@ -14,7 +14,9 @@ Color Palette: #77878B slate grey, #305252 dark slate grey,
 body {
     scroll-behavior: smooth;
     background-color: #B7D5D4;
-    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 nav {
@@ -31,7 +33,8 @@ nav {
     overflow: hidden;
     border-radius: 8px;
     margin-top: 15px;
-
+    z-index: 1;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     transition: width 0.4s ease, margin 0.4s ease, border-radius 0.4s ease, height 0.3s ease;
 }
 
@@ -71,4 +74,398 @@ nav {
 a, a:visited {
     text-decoration: none;
     color: white;
+    font-family: 'Archivo';
+}
+
+
+main {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Source Code Pro';
+    color: white;
+    flex: 1;
+    margin-bottom: 50px;
+}
+
+.hero {
+    background-color: #77878B;
+    text-align: center;
+    padding: 10px 30px;
+    width: 80%;
+    overflow: hidden;
+    z-index: -1;
+    border-radius: 4px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.herotext {
+    color: #373E40;
+    margin-top: 20px;
+    font-family: 'Archivo';
+    font-size: 1rem;
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 75px;
+    display: flex;
+    gap: 3rem;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+}
+
+.buttons a {
+    background-color: #305252;
+    width: 100px;
+    padding: 10px 15px;
+    min-height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #373E40;
+    transition: ease-out 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons a:hover {
+    box-shadow: inset 115px 0 0 0 #373E40;
+}
+
+.why_us {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    text-align: center;
+    background-color: #488286;
+    width: 60%;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.why_us h1 {
+    margin-top: 10px;
+}
+
+.why_us p {
+    font-family: 'Archivo';
+    font-size: 1.2rem;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    gap: 1.5rem;
+}
+
+.box {
+    width: 80vw;
+    height: 250px;
+    background-color: #488286;
+    position: relative;
+    margin-bottom: 75px;
+    border-radius: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.why_text {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.icon-box {
+    position: absolute;
+    top: -40px;
+    left: 40px; 
+    background-color: #2b484a;
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+    width: 80%;
+    height: auto;
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    font-family: 'Archivo';
+}
+
+.box-header {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.box-paragraph {
+    margin-left: 15px;
+    margin-top: 30px;
+    font-size: 1rem;
+    width: 90%;
+}
+
+
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #488286;
+    font-family: 'Source Code Pro';
+}
+
+.copytext {
+    margin-left: 10px;
+    color: white;
+    font-size: 0.7rem;
+}
+
+h1 {
+    font-family: 'Source Code Pro';
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+/* About Page */
+
+.about-header {
+    display: flex;
+    background-color: #77878B;
+    padding: 10px 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.card {
+    max-width: 100vw;
+    min-height: 320px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+    gap: 1rem;
+}
+
+.card:nth-child(even) {
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.4);
+    background-color: #373E40;
+}
+
+.card:nth-child(odd) {
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #488286;
+}
+
+.card:hover {
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+#about-main {
+    margin-bottom: 0;
+}
+
+.about-title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+.about-topic {
+    font-family: 'Archivo';
+    font-size: 2.5rem;
+}
+
+.about-description {
+    font-family: 'Archivo';
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+#card2 {
+    flex-direction: row-reverse;
+}
+
+#about-title-card2 {
+    margin-right: 3%;
+}
+
+#about-title-card4 {
+    margin-right: 3%;
+}
+
+#card4 {
+    flex-direction: row-reverse;
+}
+
+.even-description {
+    margin-left: 20px;
+}
+
+
+/* Contact Page */
+
+
+.form-container {
+    width: 80%;
+    height: fit-content;
+    padding-bottom: 35px;
+    background-color: #2b484a;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+.contact {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 25px;
+}
+
+.contact input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(237, 232, 232);
+    padding-left: 20px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid black;
+}
+
+.contact label {
+    align-self: flex-start;
+    font-family: 'Archivo';
+    font-weight: bold;
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 15px;
+}
+
+#message {
+    height: 100px;
+    display: flex;
+    font-family: 'Archivo';
+    width: 100% !important;
+    background-color: rgb(237, 232, 232);
+    border-radius: 5px;
+    resize: none;
+    padding: 10px 20px;
+}
+
+#message:focus {
+    outline: none;
+    border: 2px solid black;
+}
+
+input::placeholder {
+    color: #77878B;
+}
+
+#send-button {
+    border: none;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 20px;
+    font-family: 'Archivo';
+    background-color: #488286;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    cursor: pointer;
+
+    transition: all 0.5s ease-out;
+}
+
+#send-button:hover {
+    background-color: #77878B;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .boxes {
+        display: flex;
+        flex-direction: row;
+        margin-top: 150px;
+        gap: 1.5rem;
+    }
+    
+    .box {
+        width: 30vw;
+        height: 300px;
+        background-color: #488286;
+        position: relative;
+        margin-bottom: 75px;
+        border-radius: 25px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+    }
+
+
+    /* Contact Form */
+    .contact {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact input {
+        width: 48%;
+    }
+
+    #message {
+        width: 100% !important;  
+    }
+
+    .contact label {
+        display: none;
+    }
 }

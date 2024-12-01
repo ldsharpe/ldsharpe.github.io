@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharpe Sites</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <button class="menu" id="menu">&#9776;</button>
+            <div class="page-wrapper">
+                <ul class="pages" id="pages">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="about-header">
+            <h1 id="about-text">CONTACT US</h1>
+        </div>
+        <div class="form-container">
+            <form class="contact">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+                <label for="last-name">LAST NAME</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+                <label for="email" >EMAIL</label>
+                <input type="text" name="email" id="email" placeholder="Email" required>
+                <label for="phone">PHONE</label>
+                <input type="text" name="phone" id="phone" placeholder="Phone" required>
+                <label for="message">MESSAGE</label>   
+                <textarea type="text" name="message" id="message" placeholder="Write a message"></textarea required>
+                <button type="submit" id="send-button">SEND MESSAGE</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <span class="copytext">&copy; Sharpe Sites</span>
+    </footer>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
