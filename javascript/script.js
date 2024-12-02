@@ -3,7 +3,7 @@ to help learn some JavaScript I didn't already know. I'm taking COMP 426 (Modern
 so I already have a good understanding of some JavaScript.
 
 --------------------------------------------------------------------
- Works Cited/Helpful Websites
+ Works Cited/Helpful Websites I Used
 
 https://www.w3schools.com/js/js_htmldom_eventlistener.asp
 https://www.w3schools.com/js/js_htmldom_css.asp
